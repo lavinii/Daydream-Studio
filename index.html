@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Lavinia Mocan">
+    <meta name="keywords" content="sala yoga, relaxare, yoga, pace interoara, calm mintal">
+    <meta name="description"
+        content="Yoga este un stil de viață! Beneficiază de echilibru și armonie pentru minte, trup și suflet cu puțin ajutor din partea antrenorilor noștri. Te așteptăm la Daydream Studio!">
+    <link href="logo1.png" rel="icon" type="image/png">
+    <title>Daydream Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .navbar-brand img {
+            width: 100px;
+            height: 56px;
+        }
+
+        .nav-link {
+            color: aliceblue;
+            margin: 0 10px 0 20px;
+        }
+
+        .nav-link:hover {
+            color: rgb(69, 207, 232);
+            text-decoration: underline;
+        }
+
+        button {
+            color: azure;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            width: 35%;
+            font-size: x-large;
+            font-weight: 600;
+        }
+
+        .card {
+            width: 18rem;
+            border: none;
+            transition: background-color 0.5s ease;
+        }
+
+        .card:hover {
+            background-color: rgb(203, 240, 255);
+        }
+
+        .card-title {
+            font-size: large;
+        }
+
+        .accordion {
+            --bs-accordion-btn-bg: rgb(245, 233, 255);
+            --bs-accordion-active-bg: rgb(245, 208, 251);
+        }
+
+        .accordion-button {
+            font-weight: 500;
+        }
+
+        footer img {
+            height: 30px;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        footer img:hover {
+            opacity: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-xl">
+                <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logoul site-ului daydream studio" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#servicii">Servicii</a>
+                        <a class="nav-link" href="#abonamente">Abonamente</a>
+                        <a class="nav-link" href="#despre">Despre noi</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="ratio ratio-21x9">
+                    <img src="pic1.jpg" class="d-block w-100" alt="doamnă în poziție de yoga la apus">
+                </div>
+                <div class="carousel-caption d-none d-md-block mx-auto shadow rounded">
+                    <p>Îmbunătățește-ți postura</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="pic3.jpg" class="d-block w-100" alt="două doamne care fac yoga pe marginea lacului">
+                </div>
+                <div class="carousel-caption d-none d-md-block mx-auto shadow rounded">
+                    <p>Relaxează-ți mușchii</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="pic2.jpg" class="d-block w-100" alt="doamnă în poziție de yoga pe teresă">
+                </div>
+                <div class="carousel-caption d-none d-md-block mx-auto shadow rounded">
+                    <p>Relaxează-ți mintea</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="pic4.jpg" class="d-block w-100" alt="doamnă în poziție de yoga pe o stâncă lângă mare">
+                </div>
+                <div class="carousel-caption d-none d-md-block mx-auto shadow rounded">
+                    <p>Dobândește pace interioară</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="pic5.jpg" class="d-block w-100" alt="piciorele oamenilor care fac yoga">
+                </div>
+                <div class="carousel-caption d-none d-md-block mx-auto shadow rounded">
+                    <p>Alătură-te nouă în această călătorie</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">De ce să alegi yoga?</h2>
+            </div>
+            <div class="col-12 col-lg-8">
+                <p>Yoga este mai mult decât o serie de exerciții fizice; este o practică holistică, cu rădăcini adânci
+                în tradiția indiană, care unește corpul, mintea și sufletul pentru a crea armonie și echilibru în viața
+                noastră. Această practică vă oferă oportunitatea de a vă conecta cu esența voastră interioară, de a
+                cultiva o respirație conștientă și de a vă liniști mintea. Prin mișcare, veți descoperi cum corpul
+                devine mai puternic și mai flexibil, dar și cum fiecare postură aduce o stare de bine și calm. Respirația
+                devine un aliat puternic, ajutându-vă să gestionați stresul și să vă reconectați la momentul prezent.</p>
+                <p>Yoga nu se limitează la o simplă activitate fizică; este o cale de transformare. Veți descoperi
+                beneficiile unui somn mai liniștit, ale unei energii mai echilibrate și ale unei perspective mai clare asupra
+                vieții. Nu este nevoie să aveți experiență sau abilități speciale. Fiecare practică este adaptată nevoilor și
+                ritmului vostru, iar ceea ce contează cel mai mult este deschiderea de a învăța și curiozitatea de a explora.
+                </p>
+                <p>Această călătorie este despre a vă oferi timp pentru voi, despre a crea spațiu pentru liniște și
+                reflecție și despre a vă bucura de fiecare moment. Yoga este o artă a prezenței și o invitație de a
+                trăi cu mai multă conștiență și bucurie.</p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <img src="broaste.jpg" alt="două broaște de porțelan în poziții de yoga" class="w-100 my-3">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="my-2 col-12">
+                <h3>Beneficii yoga</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card mx-2 my-3 col-lg-3 col-md-6 col-12">
+                <img src="muschi.png" class="card-img-top py-3 px-2" alt="persoană în poziție de yoga">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Relaxare musculară</h4>
+                </div>
+            </div>
+            <div class="card mx-2 my-3 col-lg-3 col-md-6 col-12">
+                <img src="energy.png" class="card-img-top py-3 px-2" alt="persoană cu o bateri lângă">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Creșterea nivelului de energie</h4>
+                </div>
+            </div>
+            <div class="card mx-2 my-3 col-lg-3 col-md-6 col-12">
+                <img src="meditation.png" class="card-img-top py-3 px-2" alt="persoană în poziție de meditație">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Pace interioară</h4>
+                </div>
+            </div>
+            <div class="card mx-2 mt-3 col-lg-3 col-md-6 col-12">
+                <img src="calm.png" class="card-img-top py-3 px-2" alt="floare de lotus">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Calm mintal</h4>
+                </div>
+            </div>
+            <hr class="my-5">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="servicii">Servicii</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="accordion my-4" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Yoga pentru începători
+                            </button>
+                        </h3>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                Yoga pentru începători este o practică accesibilă care <strong>îmbunătățește flexibilitatea, forța și
+                                starea de bine</strong>, combinând mișcarea, respirația și concentrarea. Începe cu posturi simple,
+                                sincronizate cu respirația, pentru a calma mintea și reduce stresul. Alegerea unui spațiu
+                                liniștit, a hainelor lejere și a unui covoraș confortabil facilitează practica, iar
+                                instructorii, fie în persoană, fie online, pot oferi ghidare utilă. Fără a căuta perfecțiunea,
+                                yoga încurajează răbdarea și acceptarea. Beneficiile includ o postură mai bună, relaxarea
+                                musculară și echilibrul mental, transformând fiecare sesiune într-o călătorie de autodescoperire
+                                și sănătate holistică.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Yoga pentru îmbunătățirea posturii
+                            </button>
+                        </h3>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Yoga pentru îmbunătățirea posturii este o practică eficientă care <strong>aliniează corpul, întărește
+                                mușchii și reduce tensiunea</strong>. Posturile specifice, realizate cu atenție la aliniament și
+                                respirație, contribuie la corectarea pozițiilor incorecte cauzate de sedentarism sau
+                                obiceiuri zilnice. Practicată într-un spațiu liniștit, cu haine confortabile și un covoraș
+                                adecvat, yoga îmbină mișcarea fluidă cu concentrarea, aducând conștientizare asupra corpului. Prin
+                                menținerea pozițiilor corecte și întărirea mușchilor spatelui și ai abdomenului, yoga sprijină un
+                                echilibru natural. Cu răbdare și consistență, această practică nu doar îmbunătățește postura, ci
+                                oferă și o stare generală de bine și încredere în sine.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                Yoga pentru relaxare
+                            </button>
+                        </h3>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Yoga pentru relaxare este o practică blândă care ajută la <strong>eliberarea tensiunii fizice și
+                                mentale</strong>, promovând o stare profundă de calm. Prin mișcări lente, posturi ușoare și respirație
+                                conștientă, yoga reduce stresul și îmbunătățește calitatea somnului. Realizată într-un spațiu
+                                liniștit, cu haine lejere și un covoraș confortabil, această practică încurajează detașarea de
+                                gândurile agitate și conectarea cu momentul prezent. Posturile restaurative, menținute
+                                pentru perioade mai lungi, ajută corpul să se relaxeze complet, în timp ce respirația ritmică
+                                calmează sistemul nervos. Practicată regulat, yoga pentru relaxare creează un echilibru interior
+                                și o stare generală de bine.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                Yoga pentru vindecare
+                            </button>
+                        </h3>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Yoga pentru vindecare este o practică delicată care <strong>sprijină procesul de recuperare fizică,
+                                mentală și emoțională</strong>. Prin posturi blânde, adaptate nevoilor individuale, și respirație
+                                conștientă, yoga stimulează circulația, reduce inflamația și calmează sistemul nervos.
+                                Practicată într-un mediu liniștit, cu atenție și răbdare, aceasta creează spațiu pentru
+                                regenerare, întărind conexiunea dintre corp și minte. Focalizarea pe relaxare și conștientizare
+                                ajută la reducerea stresului, sprijinind mecanismele naturale de vindecare ale organismului.
+                                Potrivită pentru toate nivelurile, yoga pentru vindecare este o modalitate holistică de
+                                a redobândi echilibrul și de a cultiva o stare durabilă de bine.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <img src="yg1.jpg" class="w-100" alt="doamnă în poziție de yoga pe un covoraș albastru">
+            </div>
+            <div class="col-6 col-lg-3 mt-lg-5">
+                <img src="yg2.jpg" class="w-100" alt="doamnă în poziție de meditație pe un covoraș albastru">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mt-4">
+            <h2 id="abonamente">Abonamente</h2>
+        </div>
+        <div class="card-group my-3">
+            <div class="card">
+                <img src="cg1.jpg" class="card-img-top" alt="statuetă cu un călugăr">
+                <div class="card-body">
+                    <h3 class="card-title">Basic <span class="badge rounded-pill text-bg-primary">Nou</span></h3>
+                    <p class="card-text">
+                        Ideal pentru începători sau pentru cei care doresc să participe ocazional la clase. Include
+                        acces la clasele de yoga de bază.
+                    </p>
+                    <p class="card-text">Acces: 5 clase/lună</p>
+                    <p class="card-text"><strong>150 RON</strong></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cg2.jpg" class="card-img-top" alt="floare de lotus în apă">
+                <div class="card-body">
+                    <h3 class="card-title">Standard <span class="badge rounded-pill text-bg-primary">Favorit</span></h3>
+                    <p class="card-text">Potrivit pentru practicanți constanți care doresc să-și îmbunătățească rutina.
+                        Include acces la toate tipurile de clase de yoga.
+                    </p>
+                    <p class="card-text">Acces: 12 clase/lună</p>
+                    <p class="card-text"><strong>300 RON</strong></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cg3.jpg" class="card-img-top" alt="statuetă cu buddha">
+                <div class="card-body">
+                    <h3 class="card-title">Premium <span class="badge rounded-pill text-bg-primary">Ofertă specială</span></h3>
+                    <p class="card-text">Perfect pentru pasionați, oferind flexibilitate maximă și beneficii
+                        suplimentare. Include acces nelimitat la toate clasele, sesiuni de yoga private și reduceri
+                        pentru workshopuri.
+                    </p>
+                    <p class="card-text">Acces: Nelimitat</p>
+                    <p class="card-text"><strong>450 RON</strong></p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2 id="despre">Daydream Studio</h2>
+            </div>
+            <div class="col-12 col-lg-5 mb-5">
+                <img src="class1.jpg" class="w-100" alt="trei doamne care vorbesc între ele într-o sală de yoga">
+            </div>
+            <div class="col-12 col-lg-7">
+                <p>Bun venit la Daydream Studio, un spațiu creat cu grijă pentru a-ți oferi liniște, echilibru și armonie
+                    interioară. Aici, fiecare pas este o invitație să te reconectezi cu tine însuți, să-ți descoperi puterea
+                    interioară și să explorezi beneficiile profunde ale practicii yoga.</p>
+                <p>Indiferent dacă ești la începutul călătoriei tale sau practici de mult timp, vei găsi aici o comunitate primitoare și
+                    instructori dedicați, care te vor ghida cu blândețe și pasiune. Atmosfera noastră este caldă și relaxantă, ideală
+                    pentru a-ți elibera mintea și pentru a te concentra pe respirație, mișcare și meditație.</p>
+                <p>Te invităm să descoperi transformarea pe care yoga o poate aduce în viața ta. Este mai mult decât o practică fizică –
+                    este un mod de a trăi în armonie cu tine și cu lumea din jur. Hai să începem această călătorie împreună.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-5 mb-3">
+                <h3 class="text-center">Ce urmărim?</h3>
+            </div>
+            <div class="col-lg-4 col-sm-12 mb-3 mb-sm-0">
+                <div class="card h-100 text-center mx-auto">
+                    <div class="card-body">
+                        <h4 class="card-title">Inspirăm creștere personală</h4>
+                        <p class="card-text">Fiecare sesiune este o oportunitate de a descoperi resurse interioare, de a cultiva reziliența și
+                        de a învăța să trăim mai conștient.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="card h-100 text-center mx-auto">
+                    <div class="card-body">
+                        <h4 class="card-title">Construim o comunitate unită</h4>
+                        <p class="card-text">Credem în puterea conexiunii. Sala noastră este mai mult decât un loc de practică – este un loc
+                        unde oamenii se sprijină reciproc pe drumul spre o viață mai sănătoasă și mai fericită.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="card h-100 text-center mx-auto">
+                    <div class="card-body">
+                        <h4 class="card-title">Oferim un refugiu de la agitația cotidiană</h4>
+                        <p class="card-text">Yoga este un moment de reconectare cu tine însuți. Spațiul nostru este conceput pentru a-ți oferi
+                        liniștea și energia pozitivă de care ai nevoie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-bg-dark mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 pt-4">
+                    <h2 class="text-white-50">Contact</h2>
+                    <ul class="list-unstyled text-white-50">
+                        <li>Adresa noastră: Str. X, nr. xx, Cluj-Napoca</li>
+                        <li>Număr de telefon: 0710101010</li>
+                        <li>Adresa de mail: daydreamstudio@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="d-flex justify-content-end pt-5 mb-4">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="insta.png" class="mx-2" alt="logo instagram"></a>
+                        <a href="https://www.tiktok.com/" target="_blank"><img src="tiktok.png" class="mx-2" alt="logo tik tok"></a>
+                        <a href="https://www.youtube.com/watch?v=R9m47Lkimkg" target="_blank"><img src="youtube.png" class="mx-2" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="text-secondary pb-3">© 2024 Daydream Studio</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
